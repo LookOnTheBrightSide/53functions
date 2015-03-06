@@ -1,6 +1,6 @@
 .travis.yml:
 
 before_script:
-  - npm install
+  - sudo npm install -g grunt
 
 script: gulp test
