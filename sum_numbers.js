@@ -4,5 +4,5 @@ function sum_numbers(n){
     var total = i + n;
     i++;
   }
-	return(total);
+return total;
 }
