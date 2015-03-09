@@ -1,10 +1,10 @@
-# .travis.yml:
+.travis.yml:
 
-# before_script:
-#   - npm install
+before_script:
+  - npm install
 
-# script: gulp test
+script: gulp test
 
-language: node_js
-node_js:
-  - "0.12.0"
+# language: node_js
+# node_js:
+#   - "0.12.0"
