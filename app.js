@@ -43,10 +43,24 @@ return total;
 }
 
 function number_list(n){
-	for(var i = 1; i <= n; i++){
-		return(i);
-	}
+	for(var i = 1; i >= n; i++)return (i);
+
 }
+
+
+function upper(string){
+	return string.toUpperCase();
+}
+//number_list(9);
+
+function reverse(string){
+	return string.split('').reverse().join('');
+}
+
+
+
+
+
 
 
 

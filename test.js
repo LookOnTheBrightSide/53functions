@@ -21,12 +21,17 @@ QUnit.test('length', function (assert){
 });
 
 QUnit.test('number_list', function (assert){
-	assert.equal(number_list(2), 1);
+	assert.equal(number_list(1), 1);
 });
 QUnit.test('sum_numbers', function (assert){
 	assert.equal(sum_numbers(4), 7);
 });
-
+QUnit.test('upper', function(assert){
+	assert.equal(length("mom"), 3);
+});
+QUnit.test('reverse', function(assert){
+	assert.equal(reverse("kids"),"sdik");
+});
 
 
 
