@@ -36,7 +36,9 @@ QUnit.test('reverse', function(assert){
 QUnit.test('hello_list',function(assert){
 	assert.deepEqual(hello_list(2),["hello world","hello world"]);
 });
-
+QUnit.test('high_low',function(assert){
+	assert.deepEqual(high_low([2,-22,100]),[-22,100]);
+});
 
 
 

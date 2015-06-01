@@ -65,6 +65,30 @@ function hello_list(num) {
     return array;
 }
 
+function high_low(numList) {
+	var result = [];
+    var highest = numList[0];
+    var lowest = numList[0];
+    for (var i = 0; i < numList.length; i++) {
+        //console.log(numList);
+
+        if (numList[i] > highest) {
+            highest = numList[i];
+        }
+        if (lowest > numList[i]) {
+            lowest = numList[i];
+        }
+
+    }
+    //return 
+    // console.log("the lowest is : " + lowest);
+    // //return 
+    // console.log("the highest number is : " + highest);
+    result.push(lowest, highest);
+    return result;
+
+}
+
 
 
 

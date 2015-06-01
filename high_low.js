@@ -1,22 +1,27 @@
-var numList = [1,2,3,4,5,9,8,7,6,-44,99,-4];
-function high_low(numList){
-var highest = numList[0];
-var lowest = numList[0];
-for (var i = 0; i < numList.length; i++) {
-console.log(numList);
-	
-	if(numList[i] > highest){
-		highest = numList[i];
-	}if(lowest > numList[i]){
-		lowest = numList[i];
-	}	
-	
- }
- 	//return 
-	console.log("the lowest is : " + lowest);
-	//return 
-	console.log("the highest number is : " + highest);
- 	
+var numList = [1, 2, 3, 4, 5, 9, 8, 7, 6, -44, 99, -4];
+
+function high_low(numList) {
+	var result = [];
+    var highest = numList[0];
+    var lowest = numList[0];
+    for (var i = 0; i < numList.length; i++) {
+        //console.log(numList);
+
+        if (numList[i] > highest) {
+            highest = numList[i];
+        }
+        if (lowest > numList[i]) {
+            lowest = numList[i];
+        }
+
+    }
+    //return 
+    // console.log("the lowest is : " + lowest);
+    // //return 
+    // console.log("the highest number is : " + highest);
+    result.push(lowest, highest);
+    return result;
+
 }
 
 // high_low(numList);
