@@ -33,6 +33,10 @@ QUnit.test('reverse', function(assert){
 	assert.equal(reverse("kids"),"sdik");
 });
 
+QUnit.test('hello_list',function(assert){
+	assert.deepEqual(hello_list(2),["hello world","hello world"]);
+});
+
 
 
 

@@ -40,3 +40,9 @@ TestMyCode.run("testing number_list", function(assert){
     assert.equals(3, result);
 
 });
+
+
+TesrMyCode.run("testing length", function(assert){
+    var result = length("hello");
+    assert.equals(5, result);
+});
