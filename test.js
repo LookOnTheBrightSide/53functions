@@ -39,6 +39,9 @@ QUnit.test('hello_list',function(assert){
 QUnit.test('high_low',function(assert){
 	assert.deepEqual(high_low([2,-22,100]),[-22,100]);
 });
+QUnit.test('countWords',function(assert){
+	assert.deepEqual(countWords("the mean machine"),3);
+});
 
 
 

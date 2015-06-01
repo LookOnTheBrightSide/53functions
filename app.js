@@ -89,7 +89,10 @@ function high_low(numList) {
 
 }
 
-
+function countWords(words){
+	var newList = words.split(" ");
+	return (newList.length);
+}
 
 
 
