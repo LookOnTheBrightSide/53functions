@@ -42,6 +42,9 @@ QUnit.test('high_low',function(assert){
 QUnit.test('countWords',function(assert){
 	assert.deepEqual(countWords("the mean machine"),3);
 });
+QUnit.test('sum_word_len',function(assert){
+	assert.deepEqual(sum_word_len("the boy is here"),12);
+});
 
 
 
