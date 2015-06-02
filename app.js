@@ -104,6 +104,73 @@ function sum_word_len(words){
 	return total;
 }
 
+function shortest_word(words) {
+    //var longest;
+    //set results array
+    //var result = [];
+    //split sentence into array
+    var newList = words.split(" ");
+    //set first word to be shortest word
+    var shortest = newList[0];
+    for (var i = 0; i < newList.length; i++) {
+        if (newList[i].length <= shortest.length) {
+            shortest = newList[i];
+            //result.push(shortest);
+        };
+        //newList[i].length;
+
+    };
+
+    //var results = result[0].length + result;
+    //return result;
+    return shortest + ":" + shortest.length;
+}
+
+function longest_word(words) {
+    //var longest;
+    //set results array
+    var result = [];
+    //split sentence into array
+    var newList = words.split(" ");
+    //set first word to be longest word
+    var longest = newList[0];
+    for (var i = 0; i < newList.length; i++) {
+        if (newList[i].length >= longest.length) {
+            longest = newList[i];
+            result.push(longest);
+        };
+        //newList[i].length;
+       
+    };
+
+
+    return longest + ":" + longest.length;
+}
+
+
+function word_length(words) {
+    var newList = words.split(" ");
+    var average = 0;
+    for (var i = 0; i < newList.length; i++) {
+        average += newList[i].length / newList.length;
+    };
+    var aveDown = Math.floor(average);
+    var aveUp = Math.round(average);
+    return "Down : " + aveDown + ", Up : " + aveUp;
+}
+
+
+
+function avg(words) {
+    var newList = words.split(" ");
+    var average = 0;
+    for (var i = 0; i < newList.length; i++) {
+        average += newList[i].length / newList.length;
+    };
+    //var aveDown = Math.floor(average);
+    var aveUp = Math.round(average);
+    return "Up : " + aveUp;
+}
 
 
 
