@@ -54,6 +54,9 @@ QUnit.test('longest_word', function(assert) {
 QUnit.test('word_length', function(assert) {
     assert.deepEqual(word_length("this is not the moment for all that shozz shoxx m homie"),"Down : 3, Up : 4");
 });
+QUnit.test('avg', function(assert) {
+    assert.deepEqual(avg("this is not the moment for all that shozz shoxx m homie"),"Up : 4");
+});
 
 
 
