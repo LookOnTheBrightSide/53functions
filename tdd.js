@@ -3,15 +3,9 @@ var failed = 0;
 var totalTests = 0;
 var assert = {
 
-	equals: function(expectedResult, result){
-				
-
-				
-				
+	equals: function(expectedResult, result){			
 				var rg = new RedOrGreen("myBox");
-
-					if(result === expectedResult){ 
-							
+					if(result === expectedResult){ 							
 							passed ++;
 							totalTests ++;
 							rg.makeGreen();
@@ -19,8 +13,7 @@ var assert = {
 							failed ++;
 							totalTests ++;
 							rg.makeRed();
-					}
-					 
+					}					 
 				}
 };
 var TestMyCode = {

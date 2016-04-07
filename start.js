@@ -8,6 +8,6 @@ function start(words) {
             most = newList[i].charAt(0);
         }
     }
-    return most.length + " : " most;
+    return most.length + " : " + most;
     
 }

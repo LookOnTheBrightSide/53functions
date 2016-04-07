@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
-	uglify = require('gulp-uglify'),
-	minifyCss = require('gulp-minify-css'),
-	minifyHTML = require('gulp-minify-html'),
+	  uglify = require('gulp-uglify'),
+	  minifyCss = require('gulp-minify-css'),
+	  minifyHTML = require('gulp-minify-html'),
     qunit = require('gulp-qunit');
 
 
@@ -25,15 +25,25 @@ gulp.task('minify-html', function() {
     .pipe(minifyHTML(opts))
     .pipe(gulp.dest('minifiedHtml'));
 });
-
-
-
-
-
-
-
 gulp.task('test', function() {
     return gulp
     	.src('./indexQUnit.html')
         .pipe(qunit());
 });
+
+gulp.task('default',['test'], function(){
+  
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
